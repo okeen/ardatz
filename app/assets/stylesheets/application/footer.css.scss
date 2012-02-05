@@ -1,0 +1,20 @@
+
+
+footer {
+    width: 100%;  
+    height: 70px;
+    background-image: $footer_url;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    
+    p {
+        margin-top: 47px;
+        float: left;
+        color: white;
+    }
+    #page_authors {
+        margin: { top: 50px; right: 10px;}
+        float: right;
+        a {color: white;}
+    }
+}

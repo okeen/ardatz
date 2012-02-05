@@ -1,0 +1,18 @@
+$languages_bar_width: 26px;
+$flags_width: 20px;
+$flags_spacing: 3px;
+
+ul#available_languages {
+  float: right;
+  width: $languages_bar_width;
+  margin: {right: 0px; top: 2px;}
+  li.locale {
+     width: $flags_width;
+     margin: $flags_spacing;
+     a {
+       img {
+           width: 100%;
+       }
+     }
+  }
+}

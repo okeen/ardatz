@@ -1,0 +1,35 @@
+/*
+* depend_on shared/base
+*/
+
+@import "../shared/base.css.scss";
+@import "../application/header.css.scss";
+@import "../application/footer.css.scss";
+@import "../application/languages_bar.css.scss";
+@import "../application/big_panel.css.scss";
+
+body {
+    $ninesixty_columns: 16;
+    @include grid_container;
+    #content {
+        @include clearfix;
+/*        height: 600px;*/
+        background: $gris_claro;
+        border-radius: 15px;
+        margin: {top:23px; bottom: 10px;}
+        padding: {top: 0px; bottom: 10px;}
+        h1 {
+            text-align: left;
+            color: $gris_oscuro;
+            width: 100%;
+            margin: {top: 10px;bottom: 5px;left: 10px;}
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+    strong {
+        color: $verde;
+    }
+    .translation_missing {color: red;}
+}

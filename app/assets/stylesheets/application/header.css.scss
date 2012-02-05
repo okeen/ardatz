@@ -1,0 +1,54 @@
+
+
+header {
+    /*  @include clearfix;*/
+    width: 100%;  
+    height: 100px;
+    background-image: $header_url;
+    background-repeat: no-repeat;
+    background-position: top right;
+    img#main_logo {
+        position: relative;
+        left: 10px;
+        top: -10px;
+        float: left;
+        width: 300px;
+        
+    }
+    ul#header_nav {
+        $nav_item_separation: 1px;
+        @include inline_block_list_container;
+        background: transparentize($gris_claro, 0.6);
+        width: 305px;
+        text-align: center;
+        margin: 5px;
+        float: right;
+        nav {
+            @include inline_block_list_item($nav_item_separation);
+            margin: {top: 2px;bottom: 2px;}
+            //margin: 5px;
+            width: 70px;
+            &:first-child * { @include alpha;}
+            &:last-child  { 
+                margin-right: 0px;
+            }  
+        }
+        nav li {
+            @include border-radius(5px);
+            background: $verde;
+            opacity: 1.0; 
+            width: 100%;
+            a {
+                color: white;
+            }
+            &:hover, &:hover a {
+                background: $gris_claro;
+                color: $verde; 
+            }
+            
+        }
+    }
+    
+    ul#languages_bar {
+    }
+}
