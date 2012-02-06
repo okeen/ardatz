@@ -1,16 +1,15 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
+es:
   header:
     nav:
-      home: Home
-      services: Services
-      events: Events
-      contact: Contact
-  
+      home: Inicio
+      services: Servicios
+      events: Eventos
+      contact: Contacto
   footer:
-    created_by: "by"
-  
+    created_by: "por"
+    
   home:
     

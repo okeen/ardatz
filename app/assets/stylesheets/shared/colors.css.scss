@@ -1,4 +1,10 @@
-$gris_claro: #E4F0ED;
-$gris_oscuro: #75827E;
-$verde: #419AC0;
+$color_header: #75827E;
+$color_content: #E4F0ED;
+$color_footer: #419AC0;
+$color_headings: #419AC0;
+$color_nav: #419AC0;
 
+
+#{headings()}, strong, legend {
+        color: $color_headings;
+    }

@@ -3,13 +3,13 @@
 #= require site/json2
 #= require site/underscore
 #= require site/backbone
-#= require forms.jquery
-#= require jquery.customforms
-#= require jquery.orbit-1.4.0
-#= require jquery.placeholder.min
-#= require jquery.reveal
-#= require jquery.tooltips.min
-#= require modernizr.foundation
+#= require site/forms.jquery
+#= require site/jquery.customforms
+#= require site/jquery.orbit-1.4.0
+#= require site/jquery.placeholder.min
+#= require site/jquery.reveal
+#= require site/jquery.tooltips.min
+#= require site/modernizr.foundation
 
 
 

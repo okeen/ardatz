@@ -1,6 +1,10 @@
 Globelingua::Application.routes.draw do
-  devise_for :users
-
+  scope "/:locale", :as => "l" do
+    devise_for :users
+    namespace :admin do
+      resources :users
+    end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

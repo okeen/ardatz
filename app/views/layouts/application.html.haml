@@ -1,0 +1,18 @@
+%html
+    %head
+        = stylesheet_link_tag    "application" 
+        = javascript_include_tag "application" 
+        = stylesheet_link_tag    params[:controller] 
+        = javascript_include_tag  params[:controller] 
+        = csrf_meta_tags 
+        = yield :metadata 
+        = page_title "Title"
+
+    %body
+        #header_container 
+            = render :partial => "shared/header"
+        #content_container
+            #content
+                = yield 
+        #footer_container
+            = render :partial => "shared/footer"
