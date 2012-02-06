@@ -2,7 +2,9 @@
 @import "compass";
 @import "960/grid";
 @import "compass/utilities/general/clearfix";
-@import "compass-foundation/compass_foundation";
+
+@import "../site/settings";
+@import "ZURB-foundation";
 
 @import "../shared/colors";
 @import "../shared/paths";

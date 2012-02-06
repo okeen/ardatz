@@ -15,7 +15,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'compass-rails'
   gem 'compass-960-plugin'
-  gem "compass-foundation"
 end
 
 gem 'jquery-rails'
@@ -38,3 +37,4 @@ gem "capybara", :group => [:development, :test]
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
+gem "ZURB-foundation"

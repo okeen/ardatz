@@ -1,4 +1,4 @@
-class DeviseCreateUsers < ActiveRecord::Migration
+class CreateUsers < ActiveRecord::Migration
   def change
     create_table(:users) do |t|
       ## Database authenticatable
@@ -20,7 +20,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string   :last_sign_in_ip
 
       ## Encryptable
-      # t.string :password_salt
+      t.string :password_salt
 
       ## Confirmable
       # t.string   :confirmation_token
@@ -34,7 +34,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # t.datetime :locked_at
 
       ## Token authenticatable
-      # t.string :authentication_token
+      #t.string :authentication_token
 
 
       t.timestamps
