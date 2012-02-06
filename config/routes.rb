@@ -1,4 +1,10 @@
 Globelingua::Application.routes.draw do
+  get "company/home"
+
+  get "company/services"
+
+  get "company/contact"
+
   scope "/:locale", :as => "l" do
     devise_for :users
     namespace :admin do

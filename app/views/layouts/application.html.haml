@@ -8,7 +8,7 @@
         = yield :metadata 
         = page_title "Title"
 
-    %body
+    %body{:data=> {:page=> [controller_name.capitalize, action_name.capitalize].join}}
         #header_container 
             = render :partial => "shared/header"
         #content_container

@@ -7,3 +7,4 @@
 //= require site/site
 //= require shared/locale_chooser
 //= require application/application
+
