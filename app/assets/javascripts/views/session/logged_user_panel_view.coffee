@@ -10,8 +10,10 @@ class LoggedUserPanelView  extends Backbone.View
   
   show: () ->
     console.log "LoggedUserPanelView#show"
-  
+    $(@el).show()
+    
   hide: () ->
     console.log "LoggedUserPanelView#hide"
-  
+    $(@el).hide()
+    
 (exports ? this).LoggedUserPanelView = LoggedUserPanelView 

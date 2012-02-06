@@ -8,6 +8,11 @@ es:
       services: Servicios
       events: Eventos
       contact: Contacto
+  login:
+    email: email
+    password: contraseña
+    signup: regístrate
+    button: Log In
   footer:
     created_by: "por"
     

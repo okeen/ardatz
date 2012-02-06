@@ -6,17 +6,24 @@ Globelingua::Application.routes.draw do
     get "contact" => "company#contact", :as => "company_contact"
     root :to => "company#home"
      
-    devise_for :users do
+    devise_for :users  do
       get "login" => "devise/sessions#create", :as => "new_user_session" 
-      post "login" => "devise/sessions#create" 
-      post "logout" => "devise/sessions#destroy"
       get "register" => "devise/registrations#new", :as => "new_user"
-      post "register" => "devise/registrations#create"
-    end
+    end    
+    
     namespace :admin do
       resources :users
     end
   end
+  
+  devise_for :users  do
+      post "login" => "devise/sessions#create" 
+      post "logout" => "devise/sessions#destroy"
+      post "register" => "devise/registrations#create"
+  end
+  
+  root :to => "company#home"
+    
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

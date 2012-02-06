@@ -15,6 +15,9 @@ class SessionView  extends Backbone.View
   render: () ->
     @loginPanelView.render()     
     @loggedUserPanelView.render()
+    @loginPanelView.show()
+    @loggedUserPanelView.hide()
+    
     
   loggedIn: () =>
     console.log "SessionView::loggedIn"

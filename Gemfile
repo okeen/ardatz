@@ -31,6 +31,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem "devise"
+gem "formtastic"
 gem "cucumber-rails", :group => [:development, :test]
 gem "sqlite3", :group => [:development, :test]
 gem "capybara", :group => [:development, :test]

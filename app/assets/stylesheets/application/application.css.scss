@@ -2,10 +2,12 @@
 * depend_on shared/base
 */
 
+
 @import "../shared/base.css.scss";
 @import "../application/header.css.scss";
 @import "../application/footer.css.scss";
 @import "../application/languages_bar.css.scss";
+@import "../application/user_session_panel.css.scss";
 
 body {
     #content_container {

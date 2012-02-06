@@ -1,0 +1,46 @@
+/*
+Document   : user_session_panel
+Created on : Feb 6, 2012, 8:29:59 PM
+Author     : eneko
+Description:
+Purpose of the stylesheet follows.
+*/
+@import "compass/css3.scss";
+
+
+div#user_session_panel {
+    @include clearfix;
+    float: right;
+    height: 76px;
+    @include border-top-radius(5px);
+    background: transparentize($color_header, 0.5);
+    width: 164px;
+    margin: {top: 0px;}
+    
+    .login_panel {
+        form#login_form {
+            label {
+                float: left;
+                width: 63px;
+                text-align: right;
+                margin: {top: 5px;bottom: 2px; right: 2px;}
+            } 
+            input[type=text] {
+                width: 95px;
+                margin-right: 2px;    
+                float: right;
+            }
+            input[type=submit] {
+                width: 60px;
+                margin-right: 2px;    
+                float: right;
+            }
+            a.signup_link {
+                margin-top: 5px;
+                float:left;            
+            }
+            
+        }        
+    }
+    
+}

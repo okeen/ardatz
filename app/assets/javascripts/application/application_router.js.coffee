@@ -14,7 +14,8 @@ class ApplicationRoutes extends Backbone.Router
     @sessionView= new SessionView 
       model: @session
       el: $("#user_session_panel")[0]
-      
+    @sessionView.render()
+    
 $  ->
   window.app= new ApplicationRoutes
   app.init()

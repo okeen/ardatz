@@ -10,9 +10,11 @@ class LoginPanelView  extends Backbone.View
     
   show: () ->
     console.log "LoginPanelView#show"
+    $(@el).show()
     
   hide: () ->
     console.log "LoginPanelView#hide"
+    $(@el).hide()
     
   
 (exports ? this).LoginPanelView = LoginPanelView 

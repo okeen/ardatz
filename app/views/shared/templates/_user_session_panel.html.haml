@@ -2,4 +2,11 @@
   %p= "Hola!".html_safe
 
 %script{:id => "login-panel-template", :type => "text/template"}
-  %p= t 'session.login.ask'
+  = form_for User.new, :url => l_user_session_path, :html => {:id => "login_form"} do |f|
+    = f.label :email, t("login.email")
+    = f.text_field :email
+    = f.label :password, t("login.password")
+    = f.text_field :password
+    = link_to t("login.signup"), l_new_user_path, :class=> "signup_link"
+    = f.submit t("login.button")
+      

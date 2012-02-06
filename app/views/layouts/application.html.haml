@@ -9,6 +9,7 @@
         = page_title "Title"
 
     %body{:data=> {:page=> [controller_name.capitalize, action_name.capitalize].join}}
+        %div{:style => "display:none"}= user_signed_in?
         #header_container 
             = render :partial => "shared/header"
         #content_container

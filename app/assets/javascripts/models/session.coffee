@@ -5,7 +5,7 @@ class Session extends Backbone.Model
     "logged": false
     
   initialize: ->
-    if $("_tendel_tcg")
+    if $.cookie("_token_tcg")
       console.log "Session: active tendel cookie found"
       model= $.parseJSON $("#logged_player_bootstrap").html()
       setTimeout () =>
@@ -13,7 +13,7 @@ class Session extends Backbone.Model
       , 500
     else
       console.log "Session: active token NOT found"
-    
+      @sessionLoggedOut()
   
   validate: (attrs) ->
   
