@@ -1,5 +1,5 @@
 
-class CompanyShow extends Backbone.Router
+class CompanyHome extends Backbone.Router
 
   routes: {
     ''                     : 'index' 
@@ -8,6 +8,6 @@ class CompanyShow extends Backbone.Router
     console.log "Initialized CompanyServices"
 
   index: ->
-  
+    console.log "CompanyServices#index"
 
-(exports ? this).CompanyShow = CompanyShow
+(exports ? this).CompanyHome = CompanyHome

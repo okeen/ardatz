@@ -3,6 +3,7 @@
 #= require site/json2
 #= require site/underscore
 #= require site/backbone
+#= require site/jquery.cookie
 #= require site/forms.jquery
 #= require site/jquery.customforms
 #= require site/jquery.orbit-1.4.0

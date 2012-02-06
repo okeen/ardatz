@@ -1,11 +1,11 @@
 
-class CompanyShow extends Backbone.Router
+class CompanyServices extends Backbone.Router
 
   routes: {
     ''                     : 'index' 
   }
   initialize: ->
-    console.log "Initialized CompanyServices"
+    console.log "RouterCompanyServices#init"
     
   index: ->
     console.log "Root"

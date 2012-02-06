@@ -1,0 +1,17 @@
+%script{:id => "team-panel-template", :type => "text/template"}
+  .catalogue_item_container.clickable_container
+    .team_panel.clickable_container
+      .left_subpanel
+        .team_photo
+      .team_info
+        %h4 
+          <a href ="<%= team_url %>"> <%=name%> </a>
+      .team_players_panel
+        %ul.team_players
+          %li.player{:name => "player1"}
+            <img src="http://graph.facebook.com/<%=player1_facebook_id%>/picture?type=square"/>
+            <a href ="<%= player1_url %>"> <%=player1_name%> </a>
+          %li.player{:name => "player2"}
+            <img src="http://graph.facebook.com/<%=player2_facebook_id%>/picture?type=square"/>
+            <a href ="<%= player2_url %>"> <%=player2_name%> </a>
+      

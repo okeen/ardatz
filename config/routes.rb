@@ -1,12 +1,18 @@
 Globelingua::Application.routes.draw do
-  get "company/home"
-
-  get "company/services"
-
-  get "company/contact"
 
   scope "/:locale", :as => "l" do
-    devise_for :users
+    get "home" => "company#home", :as => "company_home"
+    get "services" => "company#services", :as => "company_services"
+    get "contact" => "company#contact", :as => "company_contact"
+    root :to => "company#home"
+     
+    devise_for :users do
+      get "login" => "devise/sessions#create", :as => "new_user_session" 
+      post "login" => "devise/sessions#create" 
+      post "logout" => "devise/sessions#destroy"
+      get "register" => "devise/registrations#new", :as => "new_user"
+      post "register" => "devise/registrations#create"
+    end
     namespace :admin do
       resources :users
     end

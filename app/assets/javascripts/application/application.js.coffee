@@ -1,8 +1,5 @@
-$ ->
-  @locales= new LocaleChooserView()
-  page = $("body").data("page");
-  if "object" == typeof window[page]
-    window[page].init()
-  
-  app.router = new TeamRoutes
-  Backbone.history.start()
+#= require_tree ../models
+#= require_tree ../collections
+#= require_tree ../views/session
+
+#= require application/application_router
